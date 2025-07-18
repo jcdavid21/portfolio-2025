@@ -148,14 +148,14 @@ function ProjDisplay() {
         ),
         details: (
             <div className="space-y-6">
-                <div className="bg-gray-800 p-6 rounded-lg">
+                <div className="bg-gray-800 p-6 rounded-lg max-sm:p-1">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Full Description</h3>
                     <div className="prose prose-invert max-w-none max-sm:text-sm">
                         {project.description || "No description available for this project."}
                     </div>
                 </div>
 
-                <div className="bg-gray-800 p-6 rounded-lg">
+                <div className="bg-gray-800 p-6 rounded-lg max-sm:p-1">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Installation & Setup</h3>
                     <div className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
                         <code className="text-green-400 text-sm max-sm:text-xs whitespace-pre-wrap break-words">
@@ -173,7 +173,7 @@ function ProjDisplay() {
                     </div>
                 </div>
 
-                <div className="bg-gray-800 p-6 rounded-lg">
+                <div className="bg-gray-800 p-6 rounded-lg max-sm:p-1">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Project Structure</h3>
                     <div className="bg-gray-900 p-4 rounded-lg font-mono text-sm">
                         <div className="text-gray-400">
