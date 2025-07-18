@@ -197,31 +197,31 @@ function ProjDisplay() {
             <div className='navbar text-white p-4 pb-0 border-b border-b-gray-500'>
                 <div className='flex items-center justify-between pb-5'>
                     <div className='flex items-center justify-center gap-3'>
-                        <a href="/">
+                        <a href="/" className="flex items-center">
                             <IoArrowBackCircle className='text-[28px] text-gray-200 hover:text-white transition-colors' />
                         </a>
                         <a href="https://github.com/" target='blank' rel="noopener noreferrer">
                             <IoLogoGithub className='text-[36px] hover:text-gray-300 transition-colors' />
                         </a>
-                        <div className='text-[14px] font-semibold'>Juan Carlo David</div>
+                        <div className='text-[14px] font-semibold hidden sm:block'>Juan Carlo David</div>
                     </div>
-                    <div className='flex items-center justify-center gap-3'>
-                        <FaFacebookF className={`${icon_size}`} />
-                        <FaTiktok className={`${icon_size}`} />
+                    <div className='flex items-center justify-center gap-2 sm:gap-3'>
+                        <FaFacebookF className={`${icon_size} hidden sm:block`} />
+                        <FaTiktok className={`${icon_size} hidden sm:block`} />
                         <FaTelegramPlane className={`${icon_size}`} />
-                        <div className='h-11 w-11 rounded-full overflow-hidden'>
+                        <div className='h-8 w-8 sm:h-11 sm:w-11 rounded-full overflow-hidden'>
                             <img src={Profile} alt="Profile"
                                 className='h-full w-full object-fit-contain object-center' />
                         </div>
                     </div>
                 </div>
 
-                <div className='flex gap-5'>
-                    <a className="flex items-center gap-1 border-b-2 px-2 py-2 cursor-pointer text-[16px] font-semibold border-amber-600 transition-colors duration-300">
-                        <div className='text-[20px] text-gray-400'>
+                <div className='flex gap-2 sm:gap-5 overflow-x-auto'>
+                    <a className="flex items-center gap-1 border-b-2 px-2 py-2 cursor-pointer text-[14px] sm:text-[16px] font-semibold border-amber-600 transition-colors duration-300 whitespace-nowrap">
+                        <div className='text-[18px] sm:text-[20px] text-gray-400'>
                             <VscGithubProject />
                         </div>
-                        <span>Project Display</span>
+                        <span className='hidden sm:inline'>Project Display</span>
                     </a>
                 </div>
             </div>
@@ -237,8 +237,8 @@ function ProjDisplay() {
                     <div className="bg-gray-800 rounded-lg p-6 mb-6">
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                             <div>
-                                <h1 className="text-3xl font-bold mb-2 text-white flex items-center gap-2">
-                                    <IoGitBranchSharp className='text-amber-500' />
+                                <h1 className="text-3xl font-bold mb-2 text-white flex items-center gap-2 max-sm:text-xl">
+                                    <IoGitBranchSharp className='text-amber-500 max-sm:text-4xl' />
                                     {project.title}
                                 </h1>
                                 <p className="text-gray-300 text-sm mb-4">

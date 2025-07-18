@@ -205,8 +205,8 @@ function Project() {
                                                 </div>
                                             </div>
                                             <p className="text-gray-300 mb-4">{repo.description}</p>
-                                            <div className="flex items-center gap-4 text-sm text-gray-400">
-                                                <div className="flex items-center gap-3">
+                                            <div className="flex max-sm:grid max-sm:grid-cols-1 gap-4 text-sm text-gray-400">
+                                                <div className="flex items-center gap-3 max-sm:grid max-sm:grid-cols-2">
                                                     {repo.language.map((lang, i) => (
                                                         <div key={i} className="flex items-center gap-1 ">
                                                             <span

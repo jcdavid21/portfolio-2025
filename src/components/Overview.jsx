@@ -49,20 +49,14 @@ function Overview() {
         },
     ]
 
-    const ActivityIcon = ({ type }) => {
-        switch (type) {
-            case 'commit':
-                return <GoGitCommit className="text-green-400" />;
-            case 'create':
-                return <IoMdGitBranch className="text-blue-400" />;
-            case 'star':
-                return <IoMdStar className="text-yellow-400" />;
-            case 'fork':
-                return <GoRepoForked className="text-gray-400" />;
-            default:
-                return <GoGitCommit className="text-green-400" />;
-        }
-    };
+    // load the before displaying the page
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            setActiveTab('overview');
+        }, 1000); // 1 second delay
+        return () => clearTimeout(timer); // Cleanup the timer on unmount
+    }, []);
+
 
     return (
         <div>
