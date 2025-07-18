@@ -183,7 +183,7 @@ function Project() {
                                     </button>
                                 </nav>
                             </div>
-
+                            <h2 className='text-sm mb-4 text-gray-400'> # Click the project name to view details</h2>
                             {/* Tab Content */}
                             {activeTab === 'projects' && (
                                 <div className="space-y-4">
