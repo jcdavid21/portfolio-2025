@@ -29,11 +29,11 @@ function Achievements() {
         },
         {
             id: 2, title: "Codechum National Programming Challenge", image: Codechum, date: "2024-11-27",
-            description: "Codechum is a national programming challenge that brings together the best young coders to compete in a series of algorithmic and coding tasks."
+            description: "Codechum is a app that provides a platform for competitive programming, allowing users to practice and improve their coding skills through various challenges."
         },
         {
             id: 6, title: "Web Development 2nd Place", image: Webdev2nd, date: "2024-08-24",
-            description: "Secured 2nd place in the Web Development competition, demonstrating advanced skills in front-end and back-end technologies."
+            description: "Secured 2nd place in the Web Development competition, demonstrating advanced skills in web technologies and design."
         },
         {
             id: 1, title: "Academe Industry Linkages and Pathways", image: Ailp, date: "2024-06-05",
