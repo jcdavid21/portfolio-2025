@@ -150,7 +150,7 @@ function ProjDisplay() {
             <div className="space-y-6">
                 <div className="bg-gray-800 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Full Description</h3>
-                    <div className="prose prose-invert max-w-none">
+                    <div className="prose prose-invert max-w-none max-sm:text-sm">
                         {project.description || "No description available for this project."}
                     </div>
                 </div>
@@ -158,7 +158,7 @@ function ProjDisplay() {
                 <div className="bg-gray-800 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Installation & Setup</h3>
                     <div className="bg-gray-900 p-4 rounded-lg">
-                        <code className="text-green-400 text-sm">
+                        <code className="text-green-400 text-sm max-sm:text-xs text-wrap">
                             # This is a design only, don't copy this verbatim
                             <br /> <br />
                             # Clone the repository
