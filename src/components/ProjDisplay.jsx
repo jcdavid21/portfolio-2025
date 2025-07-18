@@ -157,13 +157,14 @@ function ProjDisplay() {
 
                 <div className="bg-gray-800 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold mb-4 text-gray-300">Installation & Setup</h3>
-                    <div className="bg-gray-900 p-4 rounded-lg">
-                        <code className="text-green-400 text-sm max-sm:text-xs text-wrap">
+                    <div className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
+                        <code className="text-green-400 text-sm max-sm:text-xs whitespace-pre-wrap break-words">
                             # This is a design only, don't copy this verbatim
-                            <br /> <br />
+                            <br /><br />
                             # Clone the repository
                             <br />
-                            git clone https://github.com/username/{project.title?.toLowerCase().replace(/\s+/g, '-')}<br /><br />
+                            git clone https://github.com/username/{project.title?.toLowerCase().replace(/\s+/g, '-')}
+                            <br /><br />
                             # Install dependencies<br />
                             npm install<br /><br />
                             # Run the project<br />
