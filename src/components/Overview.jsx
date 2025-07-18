@@ -1,4 +1,4 @@
-import React, { act, useState } from 'react';
+import React, { useState } from 'react';
 import { IoMdStar, IoMdGitBranch } from "react-icons/io";
 import { GoRepo, GoRepoForked, GoGitCommit } from "react-icons/go";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaJs, FaCode, FaGitAlt } from "react-icons/fa";
@@ -178,17 +178,16 @@ function Overview() {
                                             </p>
                                         </div>
                                     </div>
-                                    {activeTab === 'overview' && (
-                                        <div className='h-56 w-full overflow-hidden rounded-lg shadow-lg bg-gray-800'>
+                                    <div className='h-56 w-full overflow-hidden rounded-lg shadow-lg bg-gray-800'>
                                         <video
                                             src={`${DisVid}`}
                                             autoPlay
                                             loop
                                             muted
+                                            playsInline  // Add this
                                             className="w-full h-full object-cover rounded-lg"
                                         ></video>
                                     </div>
-                                    )}
                                 </div>
                             )}
                         </div>
