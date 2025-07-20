@@ -24,12 +24,14 @@ function ProjDisplay() {
     const [stateProject, setStateProject] = useState(state ? state.repo : null);
     const [activeTab, setActiveTab] = useState('details');
 
+
     useEffect(() => {
         if (state && state.repo) {
             const foundProject = ItemData.find(item => item.id === parseInt(id));
             console.log(foundProject);
             setProject(foundProject);
         }
+        window.scrollTo(0, 0);
     }, [id, state]);
 
     const slideProperties = {
@@ -198,9 +200,10 @@ function ProjDisplay() {
             <div className='navbar text-white p-4 pb-0 border-b border-b-gray-500'>
                 <div className='flex items-center justify-between pb-5'>
                     <div className='flex items-center justify-center gap-3'>
-                        <a href="/" className="flex items-center">
+                        <a onClick={() => window.history.back()} className="flex items-center cursor-pointer">
                             <IoArrowBackCircle className='text-[28px] text-gray-200 hover:text-white transition-colors' />
                         </a>
+
                         <a href="https://github.com/" target='blank' rel="noopener noreferrer">
                             <IoLogoGithub className='text-[36px] hover:text-gray-300 transition-colors' />
                         </a>

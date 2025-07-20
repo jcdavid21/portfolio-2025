@@ -8,6 +8,12 @@ import Elementary from '../assets/elem-icon.png';
 import Jhs from '../assets/jhs.png';
 import College from '../assets/olfu.png';
 import DisVid from '../assets/vid.mp4';
+import Threads from './Threads.jsx';
+import Ref1 from '../assets/erick-dp.jpg'
+import { FaNetworkWired } from "react-icons/fa";
+import { FaFacebookF, FaTiktok, FaTelegramPlane } from "react-icons/fa";
+
+
 
 
 function Overview() {
@@ -155,6 +161,17 @@ function Overview() {
                                         <GoRepo className="inline mr-2" />
                                         Overview
                                     </button>
+
+                                    <button
+                                        onClick={() => setActiveTab('references')}
+                                        className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === 'references'
+                                            ? 'border-amber-500 text-amber-500'
+                                            : 'border-transparent text-gray-400 hover:text-gray-300'
+                                            }`}
+                                    >
+                                        <GoRepo className="inline mr-2" />
+                                        References
+                                    </button>
                                 </nav>
                             </div>
 
@@ -166,27 +183,65 @@ function Overview() {
                                             <h2 className='text-2xl pb-4'>About Me</h2>
                                             <p className='text-gray-300 pb-5 text-sm leading-6 font-extralight'>
                                                 I am Juan Carlo David, a recent Bachelor of Science in Information Technology from Our Lady of Fatima University. Over four years of rigorous academic training, I developed my expertise in software development, and system analysis.
-                                                My time as an IT student was defined by curiosity and perseverance: from debugging my first C language program to architecting full-stack applications with React and Node.js. I thrived on challenges, whether mastering complex algorithms or optimizing database queries.
                                             </p>
 
                                             <p className='text-gray-300 pb-5 text-sm leading-6 font-extralight'>
                                                 Beyond academics, I engaged in extracurricular activities that developed my leadership and teamwork skills. As an active student, I always grabbed opportunities to join coding competitions and create projects that pushed my limits. These experiences taught me the value of collaboration and effective communication in achieving shared goals.
                                             </p>
-
-                                            <p className='text-gray-300 pb-5 text-sm leading-6 font-extralight'>
-                                                I am passionate about technology and its potential to solve real-world problems. I am eager to apply my skills in a professional setting, where I can contribute to innovative projects and continue learning from experienced colleagues. My goal is to become a proficient full-stack developer, creating impactful software solutions that enhance user experiences.
-                                            </p>
                                         </div>
                                     </div>
-                                    <div className='h-56 w-full overflow-hidden rounded-lg shadow-lg bg-gray-800'>
-                                        <video
-                                            src={`${DisVid}`}
-                                            autoPlay
-                                            loop
-                                            muted
-                                            playsInline  // Add this
-                                            className="w-full h-full object-cover rounded-lg"
-                                        ></video>
+                                    <div style={{ width: '100%', height: '250px', position: 'relative' }}>
+                                        <Threads
+                                            amplitude={1}
+                                            distance={0}
+                                            enableMouseInteraction={true}
+                                        />
+                                        <div className="absolute inset-0 rounded-md overflow-hidden">
+                                            <div className="w-full h-full bg-gradient-to-b from-transparent to-black opacity-50" />
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <div className='flex flex-col items-center justify-center text-center'>
+                                                    <p className="text-white text-sm font-light text-center max-w-xs">
+                                                        I approach each project with a blend of creativity and analytical thinking, ensuring a well-rounded and effective solution.
+                                                    </p>
+                                                    <a href="#" className="mt-4 inline-block">
+                                                        <button className='text-sm font-semibold bg-white text-gray-600 px-4 py-2 rounded-md hover:bg-gray-700 hover:text-gray-300 transition-colors'>
+                                                            Get Started
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'references' && (
+                                <div className="space-y-4">
+                                    <div className="bg-gray-800 rounded-lg p-6 transition-colors">
+                                        <h2 className='text-1xl pb-4 text-gray-300'>References</h2>
+                                        <div className='flex justify-between gap-6 '>
+                                            <div className='flex gap-4'>
+                                                <div className='h-20 w-20 max-sm:h-16 max-sm:w-16 rounded-full overflow-hidden'>
+                                                    <img src={Ref1} alt="ref-1-dp"
+                                                        className='h-full w-full object-contain' />
+                                                </div>
+                                                <div className='leading-4'>
+                                                    <h2 className='text-lg font-medium max-md:text-sm text-gray-200'>John Erick Llanita
+                                                    </h2>
+                                                    <span className='inline text-xs font-medium text-gray-400'>Senior Cloud Engineer
+                                                        <FaNetworkWired className='inline ml-1 text-sm' />
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div className='flex gap-4'>
+                                                <a href="https://www.facebook.com/erickoco" target='_blank' rel="noopener noreferrer">
+                                                    <FaFacebookF className='cursor-pointer' />
+                                                </a>
+                                                <FaTiktok className='cursor-pointer' />
+                                                <FaTelegramPlane className='cursor-pointer' />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             )}
