@@ -28,7 +28,6 @@ function ProjDisplay() {
     useEffect(() => {
         if (state && state.repo) {
             const foundProject = ItemData.find(item => item.id === parseInt(id));
-            console.log(foundProject);
             setProject(foundProject);
         }
         window.scrollTo(0, 0);
