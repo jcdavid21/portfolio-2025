@@ -38,21 +38,21 @@ function Project() {
             updated: '1 week ago',
             isPrivate: false
         },
-        {
-            id: 3,
-            name: 'Anemia Detection System',
-            description: 'Machine learning model for detecting anemia in medical images',
-            language: ['PHP', 'JavaScript', 'Python'],
-            languageColor: {
-                PHP: '#4F5B93',
-                JavaScript: '#f1e05a',
-                Python: '#3572A5'
-            },
-            stars: 12,
-            forks: 5,
-            updated: '3 days ago',
-            isPrivate: false
-        },
+        // {
+        //     id: 3,
+        //     name: 'Anemia Detection System',
+        //     description: 'Machine learning model for detecting anemia in medical images',
+        //     language: ['PHP', 'JavaScript', 'Python'],
+        //     languageColor: {
+        //         PHP: '#4F5B93',
+        //         JavaScript: '#f1e05a',
+        //         Python: '#3572A5'
+        //     },
+        //     stars: 12,
+        //     forks: 5,
+        //     updated: '3 days ago',
+        //     isPrivate: false
+        // },
         {
             id: 4,
             name: 'Coffee Shop Management System',
@@ -68,38 +68,38 @@ function Project() {
             updated: '5 days ago',
             isPrivate: false
         },
-        {
-            id: 5,
-            name: 'Employee Performance Evaluation System',
-            description: 'Web-based application for evaluating employee performance',
-            language: ['PHP', 'JavaScript', 'MySQL', 'Python'],
-            languageColor: {
-                PHP: '#4F5B93',
-                JavaScript: '#f1e05a',
-                MySQL: '#4479A1',
-                Python: '#3572A5'
-            },
-            stars: 9,
-            forks: 4,
-            updated: '1 week ago',
-            isPrivate: false
-        },
-        {
-            id: 6,
-            name: 'Weed in Rice Field Detection',
-            description: 'Machine learning model for detecting weeds in rice fields',
-            language: ['PHP', 'JavaScript', 'Python', 'OpenCV'],
-            languageColor: {
-                PHP: '#4F5B93',
-                JavaScript: '#f1e05a',
-                Python: '#3572A5',
-                OpenCV: '#5C3EE8'
-            },
-            stars: 7,
-            forks: 2,
-            updated: '1 week ago',
-            isPrivate: false
-        }
+        // {
+        //     id: 5,
+        //     name: 'Employee Performance Evaluation System',
+        //     description: 'Web-based application for evaluating employee performance',
+        //     language: ['PHP', 'JavaScript', 'MySQL', 'Python'],
+        //     languageColor: {
+        //         PHP: '#4F5B93',
+        //         JavaScript: '#f1e05a',
+        //         MySQL: '#4479A1',
+        //         Python: '#3572A5'
+        //     },
+        //     stars: 9,
+        //     forks: 4,
+        //     updated: '1 week ago',
+        //     isPrivate: false
+        // },
+        // {
+        //     id: 6,
+        //     name: 'Weed in Rice Field Detection',
+        //     description: 'Machine learning model for detecting weeds in rice fields',
+        //     language: ['PHP', 'JavaScript', 'Python', 'OpenCV'],
+        //     languageColor: {
+        //         PHP: '#4F5B93',
+        //         JavaScript: '#f1e05a',
+        //         Python: '#3572A5',
+        //         OpenCV: '#5C3EE8'
+        //     },
+        //     stars: 7,
+        //     forks: 2,
+        //     updated: '1 week ago',
+        //     isPrivate: false
+        // }
     ];
 
     const activities = [
