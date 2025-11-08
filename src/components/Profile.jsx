@@ -7,10 +7,6 @@ import pdfDownload from '../assets/Resume.pdf'
 function Profile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
     const closeModal = () => {
         setIsModalOpen(false);
     };
