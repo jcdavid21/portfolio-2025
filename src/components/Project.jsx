@@ -38,21 +38,21 @@ function Project() {
             updated: '1 week ago',
             isPrivate: false
         },
-        // {
-        //     id: 3,
-        //     name: 'Anemia Detection System',
-        //     description: 'Machine learning model for detecting anemia in medical images',
-        //     language: ['PHP', 'JavaScript', 'Python'],
-        //     languageColor: {
-        //         PHP: '#4F5B93',
-        //         JavaScript: '#f1e05a',
-        //         Python: '#3572A5'
-        //     },
-        //     stars: 12,
-        //     forks: 5,
-        //     updated: '3 days ago',
-        //     isPrivate: false
-        // },
+        {
+            id: 3,
+            name: 'Anemia Detection System',
+            description: 'Machine learning model for detecting anemia in medical images',
+            language: ['PHP', 'JavaScript', 'Python'],
+            languageColor: {
+                PHP: '#4F5B93',
+                JavaScript: '#f1e05a',
+                Python: '#3572A5'
+            },
+            stars: 12,
+            forks: 5,
+            updated: '3 days ago',
+            isPrivate: false
+        },
         {
             id: 4,
             name: 'Coffee Shop Management System',

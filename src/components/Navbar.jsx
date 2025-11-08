@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
 import { FaFacebookF, FaTiktok, FaTelegramPlane } from "react-icons/fa";

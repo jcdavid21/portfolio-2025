@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { IoMdStar, IoMdGitBranch } from "react-icons/io";
-import { GoRepo, GoRepoForked, GoGitCommit } from "react-icons/go";
+import { GoRepo } from "react-icons/go";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaJs, FaCode, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiPhp, SiMysql } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
 import Elementary from '../assets/elem-icon.png';
 import Jhs from '../assets/jhs.png';
 import College from '../assets/olfu.png';
-import DisVid from '../assets/vid.mp4';
 import Threads from './Threads.jsx';
 import Ref1 from '../assets/erick-dp.jpg'
 import { FaNetworkWired } from "react-icons/fa";

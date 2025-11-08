@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ItemData from './ItemData';
-import { IoReorderThreeOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
-import { FaFacebookF, FaTiktok, FaTelegramPlane, FaExternalLinkAlt, FaStar, FaEye, FaCodeBranch, FaCalendarAlt, FaUser, FaCode, FaClock, FaDownload } from "react-icons/fa";
+import { FaFacebookF, FaTiktok, FaTelegramPlane, FaStar, FaEye, FaCodeBranch, FaCalendarAlt, FaUser, FaCode } from "react-icons/fa";
 import { VscGithubProject } from "react-icons/vsc";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { useLocation, useParams } from 'react-router-dom';

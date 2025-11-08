@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaUser, FaPhone, FaMapMarkerAlt, FaEnvelope, FaHandshake } from 'react-icons/fa';
 
 function Contact() {
