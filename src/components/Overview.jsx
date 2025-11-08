@@ -46,11 +46,9 @@ function Overview() {
             imgSrc: College, comment: ''
         },
         {
-            name: 'Our Lady Of Fatima University - Quezon City', title: "College", year: "2021-2026",
+            name: 'Our Lady Of Fatima University - Quezon City', title: "College", year: "2021-2025",
             imgSrc: College, comment: <div>
-                1yr in BS Pharmacy
-                <br />
-                4yrs in BS Information Technology
+                BS Information Technology
             </div>
         },
     ]
@@ -188,6 +186,10 @@ function Overview() {
                                             <p className='text-gray-300 pb-5 text-sm leading-6 font-extralight'>
                                                 Beyond academics, I engaged in extracurricular activities that developed my leadership and teamwork skills. As an active student, I always grabbed opportunities to join coding competitions and create projects that pushed my limits. These experiences taught me the value of collaboration and effective communication in achieving shared goals.
                                             </p>
+
+                                            <div className="text-gray-300 text-sm leading-6 font-extralight">
+                                                I also do freelance work, where I apply my skills to real-world projects, delivering solutions that meet client needs. This hands-on experience has honed my ability to adapt to different project requirements and work efficiently under deadlines.
+                                            </div>
                                         </div>
                                     </div>
                                     <div style={{ width: '100%', height: '250px', position: 'relative' }}>

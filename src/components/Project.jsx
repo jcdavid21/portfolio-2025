@@ -68,38 +68,38 @@ function Project() {
             updated: '5 days ago',
             isPrivate: false
         },
-        // {
-        //     id: 5,
-        //     name: 'Employee Performance Evaluation System',
-        //     description: 'Web-based application for evaluating employee performance',
-        //     language: ['PHP', 'JavaScript', 'MySQL', 'Python'],
-        //     languageColor: {
-        //         PHP: '#4F5B93',
-        //         JavaScript: '#f1e05a',
-        //         MySQL: '#4479A1',
-        //         Python: '#3572A5'
-        //     },
-        //     stars: 9,
-        //     forks: 4,
-        //     updated: '1 week ago',
-        //     isPrivate: false
-        // },
-        // {
-        //     id: 6,
-        //     name: 'Weed in Rice Field Detection',
-        //     description: 'Machine learning model for detecting weeds in rice fields',
-        //     language: ['PHP', 'JavaScript', 'Python', 'OpenCV'],
-        //     languageColor: {
-        //         PHP: '#4F5B93',
-        //         JavaScript: '#f1e05a',
-        //         Python: '#3572A5',
-        //         OpenCV: '#5C3EE8'
-        //     },
-        //     stars: 7,
-        //     forks: 2,
-        //     updated: '1 week ago',
-        //     isPrivate: false
-        // }
+        {
+            id: 5,
+            name: 'Employee Performance Evaluation System',
+            description: 'Web-based application for evaluating employee performance',
+            language: ['PHP', 'JavaScript', 'MySQL', 'Python'],
+            languageColor: {
+                PHP: '#4F5B93',
+                JavaScript: '#f1e05a',
+                MySQL: '#4479A1',
+                Python: '#3572A5'
+            },
+            stars: 9,
+            forks: 4,
+            updated: '1 week ago',
+            isPrivate: false
+        },
+        {
+            id: 6,
+            name: 'Weed in Rice Field Detection',
+            description: 'Machine learning model for detecting weeds in rice fields',
+            language: ['PHP', 'JavaScript', 'Python', 'OpenCV'],
+            languageColor: {
+                PHP: '#4F5B93',
+                JavaScript: '#f1e05a',
+                Python: '#3572A5',
+                OpenCV: '#5C3EE8'
+            },
+            stars: 7,
+            forks: 2,
+            updated: '1 week ago',
+            isPrivate: false
+        }
     ];
 
     const activities = [
@@ -154,7 +154,7 @@ function Project() {
     return (
         <div>
             <div className="min-h-screen bg-gray-900 text-white">
-                <div className="max-w-6xl mx-auto px-4 py-8">
+                <div className="max-w-6xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
                         {/* Right Column - Repositories & Activity */}
                         <div className="lg:col-span-2">
