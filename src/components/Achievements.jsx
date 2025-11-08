@@ -30,7 +30,7 @@ function Achievements() {
 
         { id: 3, title: "Computer Security and Safety, Ethics and Privacy", image: cert3, description: "This certificate covers essential topics in computer security, including best practices for maintaining safety, understanding ethical considerations, and protecting privacy in the digital age.", date: "2025-09-10" },
 
-        { id: 4, title: "AWS Lamda Foundation", image: awsCert, description: "This training focuses on the fundamentals of AWS Lambda, a serverless compute service that lets you run code without provisioning or managing servers. This certification validates my understanding of serverless architecture and AWS services." },
+        { id: 4, title: "AWS Lamda Foundation", image: awsCert, description: "This training focuses on the fundamentals of AWS Lambda, a serverless compute service that lets you run code without provisioning or managing servers. This certification validates my understanding of serverless architecture and AWS services.", date: "2025-08-24" },
     ];
 
     const achievements = [
