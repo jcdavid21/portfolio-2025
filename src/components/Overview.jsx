@@ -34,19 +34,19 @@ function Overview() {
 
     const schools = [
         {
-            name: 'San Antonio Elementary School - Quezon City', title: "Elementary", year: "2009-2015",
+            name: 'San Antonio Elementary School - Quezon City', title: "Elementary", year: "2010-2016",
             imgSrc: Elementary, comment: ''
         },
         {
-            name: 'Little Merry Hearts Montessori Center - Quezon City', title: "Junior High School", year: "2015-2019",
+            name: 'Little Merry Hearts Montessori Center - Quezon City', title: "Junior High School", year: "2016-2020",
             imgSrc: Jhs, comment: ''
         },
         {
-            name: 'Our Lady Of Fatima University - Quezon City', title: "Senior High School", year: "2019-2021",
+            name: 'Our Lady Of Fatima University - Quezon City', title: "Senior High School", year: "2020-2022",
             imgSrc: College, comment: ''
         },
         {
-            name: 'Our Lady Of Fatima University - Quezon City', title: "College", year: "2021-2025",
+            name: 'Our Lady Of Fatima University - Quezon City', title: "College", year: "2022-2025",
             imgSrc: College, comment: <div>
                 BS Information Technology
             </div>

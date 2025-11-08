@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GoLocation, GoLink, GoMail } from "react-icons/go";
 import { IoMdCloudDownload } from "react-icons/io";
 import ProfilePic from '../assets/profile.jpg';
+import pdfDownload from '../assets/Resume.pdf'
 
 function Profile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,6 +14,15 @@ function Profile() {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
+    const handleDownload = () =>{
+        const link = document.createElement('a');
+        link.href = pdfDownload;
+        link.download = 'Juan_Carlo_David_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <div>
@@ -52,7 +62,7 @@ function Profile() {
                                 </div>
                                 <button 
                                     className="bg-green-700 px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
-                                    onClick={openModal}
+                                    onClick={handleDownload}
                                 >
                                     <span>
                                         <IoMdCloudDownload className="inline text-xl" />

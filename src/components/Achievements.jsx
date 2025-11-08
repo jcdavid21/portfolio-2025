@@ -29,8 +29,8 @@ function Achievements() {
         { id: 2, title: "Network Essentials: From LAN to WAN, VPNs and Firewalls", image: cert2, description: "This certificate provides a comprehensive understanding of network essentials, covering topics such as Local Area Networks (LANs), Wide Area Networks (WANs), Virtual Private Networks (VPNs), and firewalls. It equips learners with the knowledge to design, implement, and manage secure and efficient networks.", date: "2025-08-27" },
 
         { id: 3, title: "Computer Security and Safety, Ethics and Privacy", image: cert3, description: "This certificate covers essential topics in computer security, including best practices for maintaining safety, understanding ethical considerations, and protecting privacy in the digital age.", date: "2025-09-10" },
-        
-        { id: 4, title: "AWS Lamda Foundation", image: awsCert, description: "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. It automatically scales your applications by running code in response to events and only charges you for the compute time you consume." },
+
+        { id: 4, title: "AWS Lamda Foundation", image: awsCert, description: "This training focuses on the fundamentals of AWS Lambda, a serverless compute service that lets you run code without provisioning or managing servers. This certification validates my understanding of serverless architecture and AWS services." },
     ];
 
     const achievements = [
@@ -68,7 +68,7 @@ function Achievements() {
         <div>
             <div className="min-h-screen bg-gray-900 text-white">
                 <div className="max-w-6xl mx-auto px-4 py-8 mt-5">
-                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${showMore ? 'max-h-[5000px]' : 'max-h-[820px]'}`}>
+                    <div>
                         <h1 className='text-3xl font-bold mb-4 text-gray-300'>Certificates</h1>
                         <p className='text-gray-400 mb-6'>
                             A collection of my professional certificates that demonstrate my commitment to continuous learning and skill development.
@@ -89,15 +89,6 @@ function Achievements() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className='flex justify-end mt-6'>
-                        <button
-                            className='bg-gray-700 text-white px-4 py-2 
-                            rounded-lg hover:bg-gray-600 transition-colors'
-                            onClick={() => setShowMore(!showMore)}
-                        >
-                            {showMore ? 'Show Less' : 'Show More'}
-                        </button>
                     </div>
                 </div>
             </div>
